@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous'>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body >
+  	<div class="title">
+	  	<img src="logo.png">
+	    <h1><%= title %></h1>
+    </div>
+
+
+    <div class="jumbotron introtext">
+      <h1 class="display-3">CRYPTOBASE.</h1>
+      <p class="lead">A realtime cryptocurrency exchange monitor.</p>
+      <span>Powered by CRYPTOBASE</span>        
+   </div>
+
+
+    <div class="trading">
+    	<div class="tradingtitle">
+    		<h2>LIVE TRADING</h2>
+    	</div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>SOURCE</th>
+            <th>COST</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="success">
+            <td>Bitfinex</td>
+            <td><%= bitfinexData.last_price %></td>
+          </tr>
+          <tr class="success">
+            <td>Bitstamp</td>
+            <td><%= bitStamp.last %></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+
+    	<!-- <span>BITSMAP</span>    	
+	    <p>HIGH: <%= bitStamp.high %></p>
+	    <p>prize: <%= bitStamp.last %></p>
+	    <p>VOLUME: <%= bitStamp.volume %></p>
+	    <p>CHANGE: <%= bitStamp.high-bitStamp.last%></p>      
+      <SPAN>OKCOIN</SPAN> -->
+    </div>
+  </body>
+</html>
