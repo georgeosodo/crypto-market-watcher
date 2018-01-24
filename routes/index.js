@@ -14,8 +14,7 @@ router.get('/login', async (req, res) => {
 
 router.get('/market', async (req, res, next) => {
 
-	
-	
+
 	let bitfinex  = new ccxt.bitfinex ({ verbose: true })
 	let huobi = new ccxt.huobi()
 	const data1 = await axios.get('https://www.bitstamp.net/api/v2/ticker/btcusd/')
